@@ -74,14 +74,14 @@ const TitanPage = () => {
           <h1 className='text-xs font-semibold max-lg:text-center'>
             Tatakae, Tatakae, TATAKAE!
             <br></br>
-            Eren: &quot;It Doesn't Matter How Strong The Opposition Is. It Doesn't Matter How Fearsome The World Is, It Doesn't Matter How Cruel The World Is. Fight!&quot;
+            Eren: &quot;It Doesn&apos;t Matter How Strong The Opposition Is. It Doesn&apos;t Matter How Fearsome The World Is, It Doesn&apos;t Matter How Cruel The World Is. Fight!&quot;
             <br></br>
             <br></br>
-            &quot;You really enjoy making life hell, don't you, Eren? Fine. We'll do things your way! I'll see this through to the end!&quot;
+            &quot;You really enjoy making life hell, don&apos;t you, Eren? Fine. We&apos;ll do things your way! I&apos;ll see this through to the end!&quot;
           </h1>
           
           <h1 className='text-xs font-semibold max-lg:text-center'>
-            &quot;I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!&quot;</h1>
+            &quot;I... don&apos;t want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I&apos;ve seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn&apos;t keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!&quot;</h1>
           {/* <h1 className='text-xs font-semibold max-lg:text-center'>&quot;I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!&quot;</h1> */}
         </div>
 
