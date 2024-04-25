@@ -66,10 +66,10 @@ const TitanPage = () => {
           </h1>
           
           <h1 className='text-xs font-semibold max-lg:text-center'>
-            Zeke: Wait, Eren. Stop it! You can't do this! What the hell are you thinking? (Begins to run towards Ymir and Eren) YMIR! I GAVE YOU A COMMAND! YOU HAVE TO OBEY MY WILL!
+            Zeke: Wait, Eren. Stop it! You can&apos;t do this! What the hell are you thinking? (Begins to run towards Ymir and Eren) YMIR! I GAVE YOU A COMMAND! YOU HAVE TO OBEY MY WILL!
             <br></br>
             <br></br>
-            Eren: You've been guiding me this whole time, haven't you?<br></br><br></br>
+            Eren: You&apos;ve been guiding me this whole time, haven&apos;t you?<br></br><br></br>
           </h1>
           <h1 className='text-xs font-semibold max-lg:text-center'>
             Tatakae, Tatakae, TATAKAE!
