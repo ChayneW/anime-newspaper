@@ -56,13 +56,13 @@ const TitanPage = () => {
 
         {/* <div className='flex justify-around'> */}
         <div className='grid lg:grid-cols-4 justify-around gap-4 py-4'>
-          <h1 className='text-xs font-semibold max-lg:text-center'>"Stay Alive. That's An Order."
+          <h1 className='text-xs font-semibold max-lg:text-center'>&quot;Stay Alive. That&apos;s An Order.&quot;
             <br></br>
             <br></br>
-            "As Long As We Continue To Fight, We Are Not Defeated!"
+            &quot;As Long As We Continue To Fight, We Are Not Defeated!&quot;
             <br></br>
             <br></br>
-            "If You Win, You Live. If You Lose, You Die. If You Don't Fight, You Can't Win!"
+            &quot;If You Win, You Live. If You Lose, You Die. If You Don&apos;t Fight, You Can&apos;t Win!&quot;
           </h1>
           
           <h1 className='text-xs font-semibold max-lg:text-center'>
@@ -74,15 +74,15 @@ const TitanPage = () => {
           <h1 className='text-xs font-semibold max-lg:text-center'>
             Tatakae, Tatakae, TATAKAE!
             <br></br>
-            Eren: "It Doesn't Matter How Strong The Opposition Is. It Doesn't Matter How Fearsome The World Is, It Doesn't Matter How Cruel The World Is. Fight!"
+            Eren: &quot;It Doesn't Matter How Strong The Opposition Is. It Doesn't Matter How Fearsome The World Is, It Doesn't Matter How Cruel The World Is. Fight!&quot;
             <br></br>
             <br></br>
-            "You really enjoy making life hell, don't you, Eren? Fine. We'll do things your way! I'll see this through to the end!"
+            &quot;You really enjoy making life hell, don't you, Eren? Fine. We'll do things your way! I'll see this through to the end!&quot;
           </h1>
           
           <h1 className='text-xs font-semibold max-lg:text-center'>
-            "I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!"</h1>
-          {/* <h1 className='text-xs font-semibold max-lg:text-center'>"I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!"</h1> */}
+            &quot;I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!&quot;</h1>
+          {/* <h1 className='text-xs font-semibold max-lg:text-center'>&quot;I... don't want to die. And... I want power too. But... Oh. I think... I just got it... Why he did that... Heh, heh, heh, heh. Every last person I've seen... Was the same way... Whether it was booze... Women... Or even God... Family... the King... Dreams... Children... Power... They couldn't keep going... unless they were drunk on something. They were all... slaves to something... Even him. (hacking coughs wrack his body, bringing up blood) Wh - what are you?! A hero?!&quot;</h1> */}
         </div>
 
       </div>
