@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const NeonPage = () => {
   return (
-    <main className='max-container min-h-screen bg-white'>
+    <main className='max-container min-h-screen bg-white py-5'>
       <div className='w-full grid px-5'>
         <h1 className='text-3xl font-bold'>心の奥底では、もう二度と愛することはできないと思っている。私はすべてを失った, 私はすべてを失った, 愛するものすべてを</h1> 
         {/* <h1 className='text-3xl font-bold'>私はすべてを失った, 愛するものすべてを</h1> */}
@@ -10,7 +10,7 @@ const NeonPage = () => {
 
       <div className='max-xl:grid xl:flex'>
         {/* <div className=''> */}
-          <p className='font-noto max-xl:px-5 xl:pl-10 text-center text-3xl font-bold xl:[writing-mode:vertical-lr]'>
+          <p className='font-noto max-xl:px-5 xl:pl-10 text-center text-[26px] font-bold xl:[writing-mode:vertical-lr]'>
             エスケープ・トゥ・ザ・ビギニング 鷺巣詩郎監督 庵野秀明（総監督、第26話監督）
           </p>
         {/* </div> */}

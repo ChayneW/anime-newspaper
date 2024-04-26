@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const TitanPage = () => {
   return (
-    <div className='max-container min-h-screen w-full h-full bg-[#f6f6f6]'>
+    <div className='max-container min-h-screen w-full h-full bg-[#f6f6f6] py-5'>
       <div className='grid'>
         {/* title */}
         {/* <div className='border-8 border-black'> */}

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const GundamPage = () => {
   return (
-    <div className='max-container min-h-screen bg-white'>
+    <div className='max-container min-h-screen bg-white py-5'>
         <div className='grid'>
 
             <div className="w-full h-full grid px-10">
