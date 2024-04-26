@@ -25,9 +25,9 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <div>
+            {/* <div>
                 <h1 className='text-center  font-achivo text-3xl'>ANIME NEWS:</h1>
-            </div>
+            </div> */}
 
             <div className='flex gap-2'>    
                 <h1 className='self-center text-white'>Chayne.dev</h1>
