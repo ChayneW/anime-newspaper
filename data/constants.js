@@ -19,7 +19,7 @@ export const newsPapers = [
     },
     {
         name: 'THE CLIMB',
-        gif: 'neon-newspaper.gif',
+        gif: 'kill-la-kill-newspaper.gif',
         img: 'neon.png',
         page: 'lakill'
     },
