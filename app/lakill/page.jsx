@@ -34,8 +34,8 @@ const KillPage = () => {
             </div>
             
             <div className='py-5'>
-                <div className='relative w-[100%] h-[50vh]'>
-                {/* <div className='relative w-[100%] h-[300px]'> */}
+                {/* <div className='relative w-[100%] h-[50vh]'> */}
+                <div className='relative w-[100%] h-[400px]'>
                     <Image
                         className='bg-black'
                         src={'/kill-transform.gif'}
