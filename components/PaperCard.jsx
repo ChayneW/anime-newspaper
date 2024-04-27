@@ -10,12 +10,17 @@ const PaperCard = ({name, gif, page}) => {
         <div className={`relative grid justify-center py-4`}>
 
             <div className='relative z-0 w-[380px] h-[500px] p-4'>
-                <div className='absolute z-10 top-[10%] right-10 bg-blue-400 rounded-lg px-2' >
-                    <h1 className='text-center font-bold py-2 text-white'>test</h1>
+                <div className='absolute z-10 top-[10%] right-5 rounded-lg bg-gray-900 opacity-70 p-2' >
+                    <Image
+                        className=''
+                        src={'/arrow-diagonal.svg'}
+                        width={30}
+                        height={30}
+                    />
                 </div>
 
-                <div className='absolute z-10 bottom-[10%] left-10 bg-gray-400 rounded-lg px-2'>
-                    <h1 className='text-center font-bold py-2 text-white'>{name}</h1>
+                <div className='absolute z-10 bottom-[10%] left-5 bg-gray-400 rounded-lg px-2'>
+                    <h1 className='font-bitter text-center font-bold py-2 text-white'>{name}</h1>
                 </div>
                 
                 <Link

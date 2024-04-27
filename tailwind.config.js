@@ -22,7 +22,9 @@ module.exports = {
         noto: ['Noto Serif JP', 'Times'],
         roman: ['Times New Roman', 'Times', 'sans-serif'],
         archivo: ['Archivo Black'],
-        anton: ['Anton']
+        anton: ['Anton'],
+        bitter: ['Bitter'],
+        poppins: ['Poppins']
       },
     },
   },

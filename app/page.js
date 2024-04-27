@@ -5,12 +5,35 @@ import Link from 'next/link'
 import {newsPapers} from '../data/constants'
 import LoadingCard from '@/components/LoadingCard'
 import PaperCard from '@/components/PaperCard'
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
 
   return (
     <main className='max-container min-h-screen'>
       <div className='grid'>
+
+        <div className='flex justify-between p-10'>
+          <h1 className='font-poppins text-3xl text-left text-white'>Breaking News:</h1>
+          
+          <div>
+            <Link 
+              href="https://www.instagram.com/todd.pham?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              className="flex gap-2 align-baseline"
+              target="_blank"
+              >
+                <Image
+                  src={'/instagram.svg'}
+                  width={20}
+                  height={20}
+                />
+                <p className='font-poppins text-white'>Inspired by @todd.pham</p>
+              </Link>
+            </div>
+            {/* <FaInstagram size={20}/> */}
+            
+
+        </div>
         
         <div className='grid xl:grid-cols-3'>
           {newsPapers.map((paper, _index) => (

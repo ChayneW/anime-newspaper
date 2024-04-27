@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Navbar = () => {
   return (
     <div className='w-full'>
-        <div className='flex justify-around'>
+        <div className='flex justify-around align-middle'>
             
             <div className='flex justify-around gap-4 text-white'>
                 <Link href={'/'}>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div> */}
 
             <div className='flex gap-2'>    
-                <h1 className='self-center text-white'>Chayne.dev</h1>
+                {/* <h1 className='self-center text-white'>Chayne.dev</h1> */}
                 <div className='grid relative w-[50px] h-[50px] py-5'>
                     <Image
                         className='rounded-lg'
