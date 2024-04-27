@@ -6,7 +6,7 @@ const KillPage = () => {
         <div className='grid w-full border-4 border-black p-4'>
             
             <div className='px-5'>
-                <h1>このシリーズは、父親を殺した犯人を捜す浮浪児の少女、馬渡龍子の姿を描いている。彼女は、本能字学園の鉄の意志を持つ生徒会長、鬼龍院皐月や、彼女の母親である鬼龍院羅暁のファッション帝国と激しく対立することになる。</h1>
+                <h1 className='font-noto font-semibold'>このシリーズは、父親を殺した犯人を捜す浮浪児の少女、馬渡龍子の姿を描いている。彼女は、本能字学園の鉄の意志を持つ生徒会長、鬼龍院皐月や、彼女の母親である鬼龍院羅暁のファッション帝国と激しく対立することになる。</h1>
                 <h1 className='font-roman max-xl:text-[5rem] xl:text-[180px] text-center tracking-wide leading-none'>
                     THE CLIMB
                 </h1>
@@ -94,6 +94,11 @@ const KillPage = () => {
 
                     </div>
                 </div>
+            </div>
+
+            <div className='grid gap-2'>
+                <h1 className='font-roman font-semibold text-xl text-wrap'>The series is Trigger's first original anime television project, directed by Hiroyuki Imaishi and written by Kazuki Nakashima, both of whom had previously worked together on Gurren Lagann in 2007.</h1>
+                <h1 className='font-noto font-semibold text-xl text-wrap'>監督は今石洋之、脚本は2007年に『天元突破グレンラガン』でタッグを組んだ中島かずき。</h1>
             </div>
 
 
