@@ -97,7 +97,7 @@ const KillPage = () => {
             </div>
 
             <div className='grid gap-2'>
-                <h1 className='font-roman font-semibold text-xl text-wrap'>Kill La Kill is Trigger's first original anime television project, directed by Hiroyuki Imaishi and written by Kazuki Nakashima, both of whom had previously worked together on Gurren Lagann in 2007.</h1>
+                <h1 className='font-roman font-semibold text-xl text-wrap'>Kill La Kill is Trigger&apos;s first original anime television project, directed by Hiroyuki Imaishi and written by Kazuki Nakashima, both of whom had previously worked together on Gurren Lagann in 2007.</h1>
                 <h1 className='font-noto font-semibold text-xl text-wrap'>監督は今石洋之、脚本は2007年に『天元突破グレンラガン』でタッグを組んだ中島かずき。</h1>
             </div>
 
