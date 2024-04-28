@@ -29,7 +29,7 @@ const JujutsuPage = () => {
                     {/* larger: */}
                     <Image
                         className='max-xl:hidden xl:block'
-                        src={'/jujutsu/gojo-domain.gif'}
+                        src={'/jujutsu/gojo-stare-black.gif'}
                         alt='gif'
                         fill
                         // style={{objectFit: 'contain'}}
@@ -39,7 +39,7 @@ const JujutsuPage = () => {
                     {/* smaller: */}
                     <Image
                         className='max-xl:block xl:hidden bg-black'
-                        src={'/jujutsu/gojo-domain.gif'}
+                        src={'/jujutsu/gojo-stare-black.gif'}
                         alt='gif'
                         fill
                         style={{objectFit: 'contain'}}
