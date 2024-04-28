@@ -23,4 +23,10 @@ export const newsPapers = [
         img: 'neon.png',
         page: 'lakill'
     },
+    {
+        name: 'CALAMITY',
+        gif: 'profile/calamity-black.gif',
+        img: 'neon.png',
+        page: 'jujutsu',
+    },
 ]

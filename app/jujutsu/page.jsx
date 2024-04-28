@@ -117,7 +117,7 @@ const JujutsuPage = () => {
 
             <div className='grid justify-center'>
                 <h1 className='font-noto font-bold text-xl text-center py-2 text-wrap'>With an orchestrated onslaught from the curses, the pendulum of power starts to shift, as the warzone of what once was the city of Shibuya lays bare while the Jujutsu Forces rush to recover in what is considered a ...</h1>
-                <h1 className='font-archivo font-bold text-center leading-none tracking-wide max-xl:text-[3rem] xl:text-[150px]'>CALMITY</h1>
+                <h1 className='font-archivo font-bold text-center leading-none tracking-wide max-xl:text-[3rem] xl:text-[150px]'>CALAMITY</h1>
             </div>
 
         </div>
