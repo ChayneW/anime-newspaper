@@ -22,7 +22,8 @@ const JujutsuPage = () => {
                     style={{objectFit: 'cover'}}
                 />
             </div> */}
-            <div className='relative w-[100%] h-[400px] overflow-hidden'>
+            {/* <div className='relative w-[100%] h-[400px] overflow-hidden'> */}
+            <div className='relative w-[100%] max-md:h-[200px] md:max-lg:h-[300px] lg:h-[400px] overflow-hidden'>
                 <div className="absolute inset-0 bg-black transform skew-x-12 scale-x-[-1]">
                     
                     {/* larger: */}
@@ -57,7 +58,8 @@ const JujutsuPage = () => {
                 </div>
 
                 {/* main */}
-                <div className='relative z-0 w-[100%] h-[300px]'>
+                {/* <div className='relative z-0 w-[100%] max-lg:h-[200px] lg:h-[300px]'> */}
+                <div className='relative z-0 w-[100%] max-md:h-[200px] md:max-lg:h-[300px] lg:h-[400px]'>
                     <Image
                         className='max-xl:hidden xl:block'
                         src={'/jujutsu/shibuya-arc-black.gif'}
@@ -89,7 +91,7 @@ const JujutsuPage = () => {
                 />
             </div> */}
 
-            <div className='relative w-[100%] h-[400px] overflow-hidden'>
+            <div className='relative w-[100%] max-md:h-[200px] md:max-lg:h-[300px] lg:h-[400px] overflow-hidden'>
                 <div className="absolute inset-0 bg-black transform -skew-x-12">
                     <Image
                         className='max-xl:hidden xl:block'
