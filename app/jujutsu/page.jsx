@@ -7,10 +7,8 @@ const JujutsuPage = () => {
         <div className='grid w-full h-full gap-10'>
             {/* calmity */}
             <div className='grid justify-center gap-2'>
-                <h1 className='font-archivo font-bold leading-none tracking-wide text-center text-[200px]'>カラミティ</h1>
-                {/* <h1 className='font-noto font-bold text-xl text-center py-2'>かつて渋谷の街であった戦場がむき出しになる一方で、柔術部隊は復興に奔走する......。</h1> */}
-                <h1 className='font-noto font-bold text-xl text-center px-5 text-wrap'>呪いの計画的な攻撃により、パワーバランスは変化し始める。かつて渋谷の街であった戦場がむき出しになる一方で、柔術部隊は復興への道を急ぐ。</h1>
-                
+                <h1 className='font-archivo font-bold leading-none tracking-wide text-center max-xl:text-3xl xl:text-[200px]'>カラミティ</h1>
+                <h1 className='font-noto font-bold max-xl:text-md xl:text-xl text-center px-5 text-wrap'>呪いの計画的な攻撃により、パワーバランスは変化し始める。かつて渋谷の街であった戦場がむき出しになる一方で、柔術部隊は復興への道を急ぐ。</h1>
             </div>
 
             {/* sukana */}
@@ -24,14 +22,27 @@ const JujutsuPage = () => {
                     style={{objectFit: 'cover'}}
                 />
             </div> */}
-            <div className='relative w-full h-[400px] overflow-hidden'>
+            <div className='relative w-[100%] h-[400px] overflow-hidden'>
                 <div className="absolute inset-0 bg-black transform skew-x-12 scale-x-[-1]">
+                    
+                    {/* larger: */}
                     <Image
+                        className='max-xl:hidden xl:block'
                         src={'/jujutsu/gojo-domain.gif'}
                         alt='gif'
                         fill
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                    />
+                        
+                    {/* smaller: */}
+                    <Image
+                        className='max-xl:block xl:hidden bg-black'
+                        src={'/jujutsu/gojo-domain.gif'}
+                        alt='gif'
+                        fill
+                        style={{objectFit: 'contain'}}
+                        // style={{objectFit: 'cover'}}
                     />
                 </div>
             </div>
@@ -46,8 +57,9 @@ const JujutsuPage = () => {
                     <p className='font-noto font-semibold text-red-600 text-2xl'> アーク</p>
                     {/* <div className="w-16 h-16 bg-gray-300 rounded-xl rotate-12"></div> */}
                 </div>
+
                 {/* main */}
-                <div className='relative z-0 w-full h-[300px]'>
+                <div className='relative z-0 w-[100%] h-[300px]'>
                     <Image
                         className=''
                         src={'/jujutsu/shibuya-arc-black.gif'}
@@ -71,21 +83,33 @@ const JujutsuPage = () => {
                 />
             </div> */}
 
-            <div className='relative w-full h-[400px] overflow-hidden'>
+            <div className='relative w-[100%] h-[400px] overflow-hidden'>
                 <div className="absolute inset-0 bg-black transform -skew-x-12">
                     <Image
+                        className='max-xl:hidden xl:block'
                         src={'/jujutsu/sukana-arrow.gif'}
                         alt='gif'
                         fill
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />
+                    <Image
+                        className='max-xl:block xl:hidden bg-black'
+                        src={'/jujutsu/sukana-arrow.gif'}
+                        alt='gif'
+                        fill
+                        style={{objectFit: 'contain'}}
+                        // style={{objectFit: 'cover'}}
+                    />
+
+
+
                 </div>
             </div>
 
             <div className='grid justify-center'>
-                <h1 className='font-noto font-bold text-xl text-center py-2'>With an orchestrated onslaught from the curses, the pendulum of power starts to shift, as the warzone of what once was the city of Shibuya lays bare while the Jujutsu Forces rush to recover in what is considered a ...</h1>
-                <h1 className='font-archivo font-bold text-center leading-none tracking-wide text-[150px]'>CALMITY</h1>
+                <h1 className='font-noto font-bold text-xl text-center py-2 text-wrap'>With an orchestrated onslaught from the curses, the pendulum of power starts to shift, as the warzone of what once was the city of Shibuya lays bare while the Jujutsu Forces rush to recover in what is considered a ...</h1>
+                <h1 className='font-archivo font-bold text-center leading-none tracking-wide max-xl:text-2xl xl:text-[150px]'>CALMITY</h1>
             </div>
 
         </div>
