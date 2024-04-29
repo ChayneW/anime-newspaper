@@ -32,6 +32,7 @@ const JujutsuPage = () => {
                         src={'/jujutsu/gojo-stare-black.gif'}
                         alt='gif'
                         fill
+                        loading="lazy"
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />
@@ -43,6 +44,7 @@ const JujutsuPage = () => {
                         alt='gif'
                         fill
                         style={{objectFit: 'contain'}}
+                        loading="lazy"
                         // style={{objectFit: 'cover'}}
                     />
                 </div>
@@ -65,6 +67,7 @@ const JujutsuPage = () => {
                         src={'/jujutsu/shibuya-arc-black.gif'}
                         alt='gif'
                         fill
+                        loading="lazy"
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />
@@ -73,6 +76,7 @@ const JujutsuPage = () => {
                         src={'/jujutsu/shibuya-arc-black.gif'}
                         alt='gif'
                         fill
+                        loading="lazy"
                         // style={{objectFit: 'cover'}}
                         style={{objectFit: 'contain'}}
                     />
@@ -98,6 +102,7 @@ const JujutsuPage = () => {
                         src={'/jujutsu/sukana-arrow.gif'}
                         alt='gif'
                         fill
+                        loading="lazy"
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />
@@ -106,12 +111,10 @@ const JujutsuPage = () => {
                         src={'/jujutsu/sukana-arrow.gif'}
                         alt='gif'
                         fill
+                        loading="lazy"
                         style={{objectFit: 'contain'}}
                         // style={{objectFit: 'cover'}}
                     />
-
-
-
                 </div>
             </div>
 
