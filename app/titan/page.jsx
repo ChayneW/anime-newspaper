@@ -41,7 +41,8 @@ const TitanPage = () => {
               alt='gif'
               // layout='fill'
               fill
-              loading='lazy'
+              // loading='lazy'
+              priority
               objectFit='cover'
             />
           </div>
@@ -98,7 +99,8 @@ const TitanPage = () => {
             src={'/levi-run-1.gif'}
             alt='gif'
             fill
-            loading='lazy'
+            // loading='lazy'
+            priority
             // objectFit='cover'
             style={{objectFit:'cover'}}
           />
@@ -160,7 +162,8 @@ const TitanPage = () => {
                 src={'/levi-run-1.gif'}
                 alt='gif'
                 layout='fill'
-                loading='lazy'
+                // loading='lazy'
+                priority
                 // objectFit='cover'
                 style={{objectFit:'cover'}}
               />

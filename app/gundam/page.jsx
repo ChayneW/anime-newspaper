@@ -25,7 +25,7 @@ const GundamPage = () => {
                         src={'/zero-dmg.gif'}
                         alt='gif'
                         fill
-                        loading='lazy'
+                        priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />
@@ -36,7 +36,7 @@ const GundamPage = () => {
                         src={'/zero-dmg.gif'}
                         alt='gif'
                         fill
-                        loading='lazy'
+                        priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
                     />

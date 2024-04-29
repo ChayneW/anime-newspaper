@@ -25,7 +25,8 @@ const NeonPage = () => {
               src={'/neon-evan.gif'}
               alt='gif'
               fill
-              loading='lazy'
+              // loading='lazy'
+              priority
               // style={{objectFit: 'contain'}}
               style={{objectFit: 'cover'}}
             

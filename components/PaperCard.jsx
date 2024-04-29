@@ -31,7 +31,8 @@ const PaperCard = ({name, gif, page}) => {
                     className='rounded-xl'
                     src={`/${gif}`}
                     fill
-                    loading='lazy'
+                    // loading='lazy'
+                    priority
                     objectFit='cover'
                     />
                 </Link>
