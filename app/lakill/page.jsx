@@ -17,6 +17,7 @@ const KillPage = () => {
                     <Image
                         src={'/kill-start.gif'}
                         fill
+                        loading='lazy'
                         // objectFit='cover'
                         style={{objectFit: 'cover'}}
                     />
@@ -26,6 +27,7 @@ const KillPage = () => {
                         className='bg-black'
                         src={'/kill-satsuki-stare.gif'}
                         fill
+                        loading='lazy'
                         // objectFit='cover'
                         style={{objectFit: 'contain'}}
 
@@ -41,6 +43,7 @@ const KillPage = () => {
                         src={'/kill-transform.gif'}
                         // src={'/kill-fight.gif'}
                         fill
+                        loading='lazy'
                         // objectFit='cover'
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'contain'}}
@@ -59,6 +62,7 @@ const KillPage = () => {
                             className='max-xl:hidden xl:grid justify-center'
                             src={'/kill-mako-fight.gif'}
                             fill
+                            loading='lazy'
                             // objectFit='cover'
                             style={{objectFit: 'cover'}}
                             // style={{objectFit: 'contain'}}
@@ -69,6 +73,7 @@ const KillPage = () => {
                             className='max-xl:block xl:hidden grid bg-black justify-center'
                             src={'/kill-mako-fight.gif'}
                             fill
+                            loading='lazy'
                             // objectFit='cover'
                             // style={{objectFit: 'cover'}}
                             style={{objectFit: 'contain'}}
@@ -80,6 +85,7 @@ const KillPage = () => {
                             // src={'/kill-transform.gif'}
                             src={'/kill-fight.gif'}
                             fill
+                            loading='lazy'
                             style={{objectFit: 'cover'}}
                             // style={{objectFit: 'contain'}}
                         />
@@ -88,6 +94,7 @@ const KillPage = () => {
                             // src={'/kill-transform.gif'}
                             src={'/kill-fight.gif'}
                             fill
+                            loading='lazy'
                             // style={{objectFit: 'cover'}}
                             style={{objectFit: 'contain'}}
                         />

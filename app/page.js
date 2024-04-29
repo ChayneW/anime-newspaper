@@ -26,6 +26,7 @@ export default function Home() {
                   src={'/instagram.svg'}
                   width={20}
                   height={20}
+                  loading='lazy'
                 />
                 <p className='font-poppins text-white'>Inspired by @todd.pham</p>
               </Link>

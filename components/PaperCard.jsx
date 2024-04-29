@@ -16,6 +16,7 @@ const PaperCard = ({name, gif, page}) => {
                         src={'/arrow-diagonal.svg'}
                         width={30}
                         height={30}
+                        loading='lazy'
                     />
                 </div>
 
@@ -30,6 +31,7 @@ const PaperCard = ({name, gif, page}) => {
                     className='rounded-xl'
                     src={`/${gif}`}
                     fill
+                    loading='lazy'
                     objectFit='cover'
                     />
                 </Link>
