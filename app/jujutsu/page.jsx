@@ -85,7 +85,7 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
-                        onLoad={handleImageLoad}
+                        // onLoad={handleImageLoad}
                     />
 
                     <Image
@@ -98,11 +98,10 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'cover'}}
                         style={{objectFit: 'contain'}}
-                        onLoad={handleImageLoad}
+                        // onLoad={handleImageLoad}
                     />
 
-                    {/* {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center">Loading...</div>} */}
-                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
+                    {/* {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>} */}
                 </div>
             </div>
 
