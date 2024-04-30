@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import LoadingCard from '@/components/LoadingCard';
 
 const JujutsuPage = () => {
 
@@ -100,7 +101,8 @@ const JujutsuPage = () => {
                         onLoad={handleImageLoad}
                     />
 
-                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center">Loading...</div>}
+                    {/* {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center">Loading...</div>} */}
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
 
