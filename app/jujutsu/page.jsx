@@ -1,6 +1,15 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 
 const JujutsuPage = () => {
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className='max-container min-h-screen w-full bg-white p-4 py-10'>
         
@@ -24,8 +33,7 @@ const JujutsuPage = () => {
             </div> */}
             {/* <div className='relative w-[100%] h-[400px] overflow-hidden'> */}
             <div className='relative w-[100%] max-md:h-[200px] md:max-lg:h-[300px] lg:h-[400px] overflow-hidden'>
-                <div className="absolute inset-0 bg-black transform skew-x-12 scale-x-[-1]">
-                    
+                <div className="absolute inset-0 bg-black transform skew-x-12 scale-x-[-1]"> 
                     {/* larger: */}
                     <Image
                         className='max-xl:hidden xl:block'
@@ -76,7 +84,9 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
+
                     <Image
                         className='max-xl:block xl:hidden bg-black'
                         src={'/jujutsu/shibuya-arc-black.gif'}
@@ -87,7 +97,10 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'cover'}}
                         style={{objectFit: 'contain'}}
+                        onLoad={handleImageLoad}
                     />
+
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center">Loading...</div>}
                 </div>
             </div>
 
