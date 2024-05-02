@@ -31,7 +31,7 @@ export const newsPapers = [
     },
     {
         name: 'WANTED',
-        // gif: 'profile/calamity-black.gif',
+        gif: 'profile/wanted.gif',
         img: 'neon.png',
         page: 'piece',
     },
