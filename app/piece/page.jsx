@@ -6,7 +6,10 @@ const OnePiecePage = () => {
     <div className='max-container min-h-screen w-full bg-white p-4 py-10'>
         {/* title */}
         <div className='grid w-full h-full border-4 border-black'>
-            <div>
+            <div className='relative'>
+                <div className='absolute'>
+                    <h1 className='font-bold font-bitter text-red-600'>EggLand Arc</h1>
+                </div>
                 <h1 className='font-roman font-bold leading-none tracking-wide text-center max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>WANTED</h1>
             </div>
             <div className='border-2 border-black py-2'>
@@ -68,7 +71,8 @@ const OnePiecePage = () => {
                 <p className='font-bold font-anton text-md text-center'>With the damage to the island of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p>
             </div>
 
-            <div className='grid border-2 border-black py-4'>
+            <div className='grid border-2 border-black py-4 gap-4'>
+
                 <div className=' flex gap-2 justify-center place-content-center'>
                     <div className='relative max-xl:w-[10%] xl:w-[120px] max-xl:h-[100%] xl:h-[100%]'>
                         <Image
@@ -79,11 +83,17 @@ const OnePiecePage = () => {
                             priority
                         />
                     </div>
-                    <h1 className='font-roman text-black leading-none font-bold text-center max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[150px]'>3,000,000,000</h1>
+                    <h1 className='font-roman text-black leading-none font-bold text-center
+                         max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[150px]'>
+                            3,000,000,000
+                    </h1>
                 </div>
 
                 <div className='text-center'>
-                    <h1 className='font-roman text-black leading-none font-bold max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[4rem] xl:text-[100px]'>DEAD OR ALIVE</h1>
+                    <h1 className='font-roman text-black leading-none font-bold 
+                        max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[100px]'>
+                            DEAD OR ALIVE
+                    </h1>
                 </div>
             </div>
 
@@ -118,11 +128,11 @@ const OnePiecePage = () => {
                     <p className='text-center font-bold text-xl'>BEAT LOUDLY, HEARTBEAT!</p>
                     <br></br>
                     
-                    <div className='grid grid-cols-2 gap-2'>
-                        <h1 className='font-semibold font-noto'>死は決して謝罪ではない</h1>
-                        <h1 className='font-semibold font-noto'>気をつけないと死ぬぞ</h1>
-                        <h1 className='font-semibold font-noto'>お嬢さん、死のうなんて思う馬鹿がいるか？</h1>
-                        <h1 className='font-semibold font-noto'>...そんなの怖いと思うか？</h1>
+                    <div className='grid grid-cols-2 gap-2 justify-center'>
+                        <h1 className='font-semibold font-noto text-center'>死は決して謝罪ではない</h1>
+                        <h1 className='font-semibold font-noto text-center'>気をつけないと死ぬぞ</h1>
+                        <h1 className='font-semibold font-noto text-center'>お嬢さん、死のうなんて思う馬鹿がいるか？</h1>
+                        <h1 className='font-semibold font-noto text-center'>...そんなの怖いと思うか？</h1>
                     </div>
 
                     <br></br>
@@ -138,7 +148,7 @@ const OnePiecePage = () => {
                             priority
                         />
                         <Image
-                            className='max-lg:block lg:hidden bg-black p-4 '
+                            className='max-lg:block lg:hidden bg-black p-4'
                             src={'/piece/luffy-charge.gif'}
                             fill
                             style={{objectFit: 'cover'}}
@@ -150,7 +160,7 @@ const OnePiecePage = () => {
             </div>
             
             <div>
-                <p className='font-bold font-noto text-center'>この悪名高い犯罪者と麦わらの一味の逮捕につながる情報があれば、遠慮なく海兵隊に知らせてほしい！もはや我々の権威に挑戦することは許されないのだ!</p>
+                <p className='font-bold font-noto text-center p-4'>この悪名高い犯罪者と麦わらの一味の逮捕につながる情報があれば、遠慮なく海兵隊に知らせてほしい！もはや我々の権威に挑戦することは許されないのだ!</p>
             </div>
         </div>
     </div>
