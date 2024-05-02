@@ -46,6 +46,7 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
                         
                     {/* smaller: */}
@@ -59,18 +60,27 @@ const JujutsuPage = () => {
                         priority
                         // placeholder='blur'
                         // style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
 
             {/* text */}
             <div className='relative'>
 
-                <div className='grid absolute z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                    <h1 className='font-noto font-bold text-red-600 max-lg:text-3xl lg:text-6xl'>SHIBUYA</h1>
-                    <h1 className='font-noto font-semibold text-red-600 max-lg:text-3xl lg:text-6xl'>INCIDENT</h1>
-                    <p className='font-noto font-semibold text-red-600 max-xl:text-lg xl:text-2xl'> アーク</p>
-                </div>
+                {imageLoaded ? 
+                    <div className='grid absolute z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                        <h1 className='font-noto font-bold text-red-600 max-lg:text-3xl lg:text-6xl'>SHIBUYA</h1>
+                        <h1 className='font-noto font-semibold text-red-600 max-lg:text-3xl lg:text-6xl'>INCIDENT</h1>
+                        <p className='font-noto font-semibold text-red-600 max-xl:text-lg xl:text-2xl'> アーク</p>
+                    </div>
+                    : 
+                    <div className='grid absolute z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                        <h1 className='text-white'>Loading...</h1>
+                    </div>
+                }
+
 
                 {/* main */}
                 {/* <div className='relative z-0 w-[100%] max-lg:h-[200px] lg:h-[300px]'> */}
@@ -85,7 +95,7 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
-                        // onLoad={handleImageLoad}
+                        onLoad={handleImageLoad}
                     />
 
                     <Image
@@ -98,10 +108,10 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'cover'}}
                         style={{objectFit: 'contain'}}
-                        // onLoad={handleImageLoad}
+                        onLoad={handleImageLoad}
                     />
 
-                    {/* {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>} */}
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
 
@@ -129,6 +139,7 @@ const JujutsuPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
                     <Image
                         className='max-xl:block xl:hidden bg-black'
@@ -140,7 +151,10 @@ const JujutsuPage = () => {
                         priority
                         style={{objectFit: 'contain'}}
                         // style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
+                    
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
 
