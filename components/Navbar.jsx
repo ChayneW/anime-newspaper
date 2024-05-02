@@ -129,6 +129,11 @@ const Navbar = () => {
               <Link href={'/'} className='self-center'>
                 <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
               </Link>
+
+              {/* <Link href={'/'} className='self-center bg-white rounded-lg p-1'>
+                <h1 className='text-3xl font-bold text-black'>ARCANA</h1>
+              </Link> */}
+
             </div>
           <hr></hr>
         </div>
