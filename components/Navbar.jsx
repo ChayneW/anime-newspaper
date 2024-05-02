@@ -41,9 +41,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className='grid self-center'
               >
-                <Link href={'/'}>
-                  <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
-                </Link>
+              <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
             </Button>
 
             <div className='self-center'>
@@ -68,7 +66,6 @@ const Navbar = () => {
                 </Link>
 
                 <Link href={'/gundam'}
-                  // className='py-1 hover:bg-[#5A0202]'
                   className='py-1 hover:text-black hover:bg-white '
                 >
                   GUNDAM WING /
