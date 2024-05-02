@@ -40,9 +40,9 @@ export default function Home() {
           {newsPapers.map((paper, _index) => (
               <PaperCard
                 key={_index}
-                name={paper.name}
-                gif={paper.gif}
-                page={paper.page}
+                name={paper?.name}
+                gif={paper?.gif}
+                page={paper?.page}
               />
             ))}
             {/* <Suspense key={_index} fallback={<LoadingCard/>}>

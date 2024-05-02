@@ -29,4 +29,10 @@ export const newsPapers = [
         img: 'neon.png',
         page: 'jujutsu',
     },
+    {
+        name: 'WANTED',
+        // gif: 'profile/calamity-black.gif',
+        img: 'neon.png',
+        page: 'piece',
+    },
 ]
