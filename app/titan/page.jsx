@@ -1,7 +1,16 @@
-import React from 'react'
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import LoadingCard from '@/components/LoadingCard';
 
 const TitanPage = () => {
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className='max-container min-h-screen w-full h-full bg-[#f6f6f6] py-5'>
       <div className='grid'>
@@ -44,7 +53,9 @@ const TitanPage = () => {
               // loading='lazy'
               priority
               objectFit='cover'
+              onLoad={handleImageLoad}
             />
+            {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
           </div>
 
         </div>
@@ -103,7 +114,9 @@ const TitanPage = () => {
             priority
             // objectFit='cover'
             style={{objectFit:'cover'}}
+            onLoad={handleImageLoad}
           />
+          {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
         </div>
 
         <div className='grid border-4 border-black'>
@@ -166,7 +179,9 @@ const TitanPage = () => {
                 priority
                 // objectFit='cover'
                 style={{objectFit:'cover'}}
+                onLoad={handleImageLoad}
               />
+              {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
             </div>
 
           </div>
@@ -223,6 +238,6 @@ const TitanPage = () => {
 
     </div>
   )
-}
+  }
 
 export default TitanPage
