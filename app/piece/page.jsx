@@ -18,31 +18,27 @@ const OnePiecePage = () => {
                 <div className='grid max-lg:w-[100%] lg:w-1/3 gap-2'>
                     
                     <div className='relative w-[100%] h-[400px]'>
-                        <Image
-                            className='bg-black'
-                            src={'/piece/luffy-rise.gif'}
-                            alt='luffy-gif'
-                            fill
-                            style={{objectFit:'contain'}}
-                        
-                        />
                         {/* <Image
-                            className='bg-black'
+                            className='max-lg:hidden lg:block bg-black'
+                            src={'/piece/luffy-rise.gif'}
+                            alt='luffy-gif'
+                            fill
+                            style={{objectFit:'cover'}}
+                            priority
+                        /> */}
+                        <Image
+                            className=' bg-black'
                             src={'/piece/luffy-rise.gif'}
                             alt='luffy-gif'
                             fill
                             style={{objectFit:'contain'}}
-                        
-                        /> */}
+                            priority
+                        />
                     </div>
-
-                    {/* <p>with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p> */}
                     <p className='py-2'>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
                 </div>
 
                 <div className='grid max-lg:w-[100%] lg:w-2/3 gap-2'>
-                    {/* <p>with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p> */}
-                    {/* <p>サカズキは、麦わらの一味がエッグヘッドでベガパンクと手を組んでいることを知る。彼はルッチとCP0エージェントをサポートするためにキザルを送る。ルッチは命令に背き、ルフィと戦う。二人は覚醒した姿に変身する。ベガパンクはルフィの悪魔の実のユニークさを説明し、太陽神ニカと結びつける。戦桃丸が到着し、セラフィムの助けを借りてルフィを助けるが、ルッチの攻撃で気絶してしまう。</p> */}
                     <p>ルッチたちがエッグヘッドへの侵攻を開始すると、シャカはそれに対処する準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える。</p>
                     <h1>戦いが始まる...。</h1>
 
@@ -53,7 +49,7 @@ const OnePiecePage = () => {
                             alt='luffy-gif'
                             fill
                             style={{objectFit:'contain'}}
-                        
+                            priority
                         />
                         <Image
                             className='max-lg:hidden lg:block bg-black'
@@ -61,7 +57,7 @@ const OnePiecePage = () => {
                             alt='luffy-gif'
                             fill
                             style={{objectFit:'cover'}}
-                        
+                            priority
                         />
                     </div>
                 </div>
@@ -79,8 +75,6 @@ const OnePiecePage = () => {
                             className='grid '
                             src={'/piece/berrysymbol.png'}
                             fill
-                            // width={120}
-                            // height={50}
                             style={{objectFit: 'contain'}}
                             priority
                         />
@@ -93,19 +87,15 @@ const OnePiecePage = () => {
                 </div>
             </div>
 
-            {/* <div className='w-full max-lg:grid lg:flex border-2 border-red-600'> */}
             <div className='w-full max-lg:grid lg:flex border-2'>
-                
-                {/* <div className='h-full max-lg:w-full lg:w-2/3 border-2 border-blue-500'> */}
                 <div className='h-full max-lg:w-full lg:w-2/3 border-2 border-black'>
-
-                    {/* <div className='relative w-full max-lg:h-[400px] lg:h-[100vh]'> */}
                     <div className='relative w-full h-[400px]'>
                         <Image
                             className='max-lg:hidden lg:block '
                             src={'/piece/luffy-gang.gif'}
                             fill
                             style={{objectFit: 'cover'}}
+                            priority
                         
                         />
                         <Image
@@ -113,10 +103,9 @@ const OnePiecePage = () => {
                             src={'/piece/luffy-gang.gif'}
                             fill
                             style={{objectFit: 'cover'}}
-                        
+                            priority
                         />
                     </div>
-                    {/* <p>with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p> */}
                     <p className='text-wrap'>
                         サカズキは、麦わらの一味がエッグヘッドでベガパンクと手を組んでいることを知る。彼はルッチとCP0エージェントをサポートするためにキザルを送る。ルッチは命令に背き、ルフィと戦う。二人は覚醒した姿に変身する。ベガパンクはルフィの悪魔の実のユニークさを説明し、太陽神ニカと結びつける。戦桃丸が到着し、セラフィムの助けを借りてルフィを助けるが、ルッチの攻撃で気絶してしまう。
                         <br></br>
@@ -125,7 +114,6 @@ const OnePiecePage = () => {
                     </p>
                 </div>
 
-                {/* <div className='max-lg:w-full lg:w-1/3 border-2 border-green-500'> */}
                 <div className='max-lg:w-full lg:w-1/3 border-2 border-black'>
                     <p className='text-center font-bold text-xl'>BEAT LOUDLY, HEARTBEAT!</p>
                     <br></br>
@@ -133,7 +121,6 @@ const OnePiecePage = () => {
                     <div className='grid grid-cols-2 gap-2'>
                         <h1>死は決して謝罪ではない</h1>
                         <h1>気をつけないと死ぬぞ</h1>
-                        {/* <br></br> */}
                         <h1>お嬢さん、死のうなんて思う馬鹿がいるか？</h1>
                         <h1>...そんなの怖いと思うか？</h1>
                     </div>
@@ -142,21 +129,20 @@ const OnePiecePage = () => {
 
                     <p className='text-center'>ルフィとルッチの戦いは続き、ルフィがルッチを圧倒する。残りの麦わらの一味は、ベガパンクからあるデビルフルーツの力が輸血によって再現できることを知る。</p>
 
-                    {/* <div className='relative w-full max-lg:h-[400px] lg:h-[100vh]'> */}
                     <div className='relative w-full h-[400px] p-4'>
                         <Image
                             className='max-lg:hidden lg:block p-4'
                             src={'/piece/luffy-charge.gif'}
                             fill
                             style={{objectFit: 'cover'}}
-                        
+                            priority
                         />
                         <Image
                             className='max-lg:block lg:hidden bg-black p-4 '
                             src={'/piece/luffy-charge.gif'}
                             fill
                             style={{objectFit: 'cover'}}
-                        
+                            priority
                         />
                     </div>
                 </div>
