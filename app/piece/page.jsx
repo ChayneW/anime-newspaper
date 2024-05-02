@@ -35,12 +35,12 @@ const OnePiecePage = () => {
                             priority
                         />
                     </div>
-                    <p className='py-2'>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
+                    <p className='font-noto p-2'>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
                 </div>
 
                 <div className='grid max-lg:w-[100%] lg:w-2/3 gap-2'>
-                    <p>ルッチたちがエッグヘッドへの侵攻を開始すると、シャカはそれに対処する準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える。</p>
-                    <h1>戦いが始まる...。</h1>
+                    <p className='font-noto p-2'>ルッチたちがエッグヘッドへの侵攻を開始すると、シャカはそれに対処する準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える。</p>
+                    <h1 className='font-noto font-semibold p-2'>戦いが始まる...。</h1>
 
                     <div className='relative w-[100%] h-[400px]'>
                         <Image
@@ -106,7 +106,7 @@ const OnePiecePage = () => {
                             priority
                         />
                     </div>
-                    <p className='text-wrap'>
+                    <p className='text-wrap font-noto p-2'>
                         サカズキは、麦わらの一味がエッグヘッドでベガパンクと手を組んでいることを知る。彼はルッチとCP0エージェントをサポートするためにキザルを送る。ルッチは命令に背き、ルフィと戦う。二人は覚醒した姿に変身する。ベガパンクはルフィの悪魔の実のユニークさを説明し、太陽神ニカと結びつける。戦桃丸が到着し、セラフィムの助けを借りてルフィを助けるが、ルッチの攻撃で気絶してしまう。
                         <br></br>
                         <br></br>
@@ -119,15 +119,15 @@ const OnePiecePage = () => {
                     <br></br>
                     
                     <div className='grid grid-cols-2 gap-2'>
-                        <h1>死は決して謝罪ではない</h1>
-                        <h1>気をつけないと死ぬぞ</h1>
-                        <h1>お嬢さん、死のうなんて思う馬鹿がいるか？</h1>
-                        <h1>...そんなの怖いと思うか？</h1>
+                        <h1 className='font-semibold font-noto'>死は決して謝罪ではない</h1>
+                        <h1 className='font-semibold font-noto'>気をつけないと死ぬぞ</h1>
+                        <h1 className='font-semibold font-noto'>お嬢さん、死のうなんて思う馬鹿がいるか？</h1>
+                        <h1 className='font-semibold font-noto'>...そんなの怖いと思うか？</h1>
                     </div>
 
                     <br></br>
 
-                    <p className='text-center'>ルフィとルッチの戦いは続き、ルフィがルッチを圧倒する。残りの麦わらの一味は、ベガパンクからあるデビルフルーツの力が輸血によって再現できることを知る。</p>
+                    <p className='text-center font-noto p-2'>ルフィとルッチの戦いは続き、ルフィがルッチを圧倒する。残りの麦わらの一味は、ベガパンクからあるデビルフルーツの力が輸血によって再現できることを知る。</p>
 
                     <div className='relative w-full h-[400px] p-4'>
                         <Image
