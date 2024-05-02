@@ -76,9 +76,7 @@ const JujutsuPage = () => {
                         <p className='font-noto font-semibold text-red-600 max-xl:text-lg xl:text-2xl'> アーク</p>
                     </div>
                     : 
-                    <div className='grid absolute z-10 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                        <h1 className='text-white'>Loading...</h1>
-                    </div>
+                    null
                 }
 
 
