@@ -13,7 +13,7 @@ export default function Home() {
     <main className='max-container min-h-screen'>
       <div className='grid'>
 
-        <div className='max-lg:grid max-lg:justify-center lg:flex lg:justify-between p-10'>
+        <div className='max-xl:grid max-xl:justify-center xl:flex xl:justify-between p-10 gap-2'>
           <h1 className='font-poppins text-3xl text-left text-white'>Breaking News:</h1>
           
           <div className=''>

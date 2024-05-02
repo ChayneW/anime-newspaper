@@ -129,8 +129,8 @@ const Navbar = () => {
                 </div>
               </div>
               
-              <Link href={'/'}>
-                <h1 className='text-3xl font-bold text-white '>ARCANA</h1>
+              <Link href={'/'} className='self-center'>
+                <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
               </Link>
             </div>
           <hr></hr>
