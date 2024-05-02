@@ -21,14 +21,6 @@ const OnePiecePage = () => {
                 <div className='grid max-lg:w-[100%] lg:w-1/3 gap-2'>
                     
                     <div className='relative w-[100%] h-[400px]'>
-                        {/* <Image
-                            className='max-lg:hidden lg:block bg-black'
-                            src={'/piece/luffy-rise.gif'}
-                            alt='luffy-gif'
-                            fill
-                            style={{objectFit:'cover'}}
-                            priority
-                        /> */}
                         <Image
                             className=' bg-black'
                             src={'/piece/luffy-rise.gif'}

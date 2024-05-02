@@ -32,67 +32,71 @@ const Navbar = () => {
         duration: .5
       }}
       >
-      <nav className='max-container bg-[#121212] py-10'>
+      <nav className='max-container py-10'>
         
         {/* small */}
-        <div className='max-md:block md:hidden'>
-          <div className='flex justify-between'>
+        <div className='max-md:block md:hidden px-10'>
+          <div className='flex justify-between self-center'>
             <Button 
               onClick={toggleMenu}
-              className='w-[120px] h-[120px]'>
-                <Image
-                  className=''
-                  src={"/red-asterisk.svg"}
-                  alt='test logo'
-                  height={100} 
-                  width={100}
-                />
+              className='grid self-center'
+              >
+                <Link href={'/'}>
+                  <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
+                </Link>
             </Button>
 
-            <div className='self-center pr-10 '>
-              <h1 className='text-2xl'>JETSET</h1>
+            <div className='self-center'>
+                <Image
+                  className='rounded-lg'
+                  src={"/chaynedev.png"}
+                  alt='test logo'
+                  height={100} 
+                  width={80}
+                />
             </div>
           </div>
 
           {isOpen ? (
             <div>
               {/* TEST PASS */}
-              <div className='flex flex-col pt-5'>
+              <div className='flex flex-col pt-5 text-white'>
                 <Link href={'/'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white'
                 >
                   HOME /
                 </Link>
 
                 <Link href={'/gundam'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  // className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   GUNDAM WING /
                 </Link>
                 <Link href={'/lakill'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   KILL LA KILL /
                 </Link>
 
                 <Link href={'/titan'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   ATTACK ON TITAN /
                 </Link>
                 <Link href={'piece'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   ONE PIECE /
                 </Link>
                 <Link href={'jujutsu'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   JUJUTSU KAISEN /
                 </Link>
 
                 <Link href={'/neon'}
-                  className='py-1 hover:bg-[#5A0202]'
+                  className='py-1 hover:text-black hover:bg-white '
                 >
                   NEON GENESIS EVANGELION /
                 </Link>
@@ -104,48 +108,32 @@ const Navbar = () => {
           //   TEST FAILED
           // </div>
           )}
-          <div>
-
-          </div>
-
         </div>
 
 
-          {/* Large */}
-          <div className='hidden md:block'>
-              <div className='flex justify-around'>
-                <div className='grid'>
-                  <div className='space-x-3'>
-                    <Link href={'/piece'}>ONE PIECE /</Link>
-                    <Link href={'/titan'}>ATTACK ON TITAN /</Link>
-                    <Link href={'/gundam'}>GUNDAM WING /</Link>
-                  </div>
-                  
-                  <div className='space-x-3'>
-                    <Link href={'/lakill'}>KILL LA KILL /</Link>
-                    <Link href={'/neon'}>NEON GENESIS EVANGELION /</Link>
-                    <Link href={'/jujutsu'}>JUJUTSU KAISEN</Link>
-                  </div>
-                </div>
-                
-                <h1 className='text-3xl font-bold'>JETSET</h1>
-                
-                <div className='grid grid-cols-2'>
-                  <div className=''>
-                    <h1>WANT TO CONSULT</h1>
-                    <Link href={''}>CONTACT US</Link>
-                  </div>
-                  {/* <button>Login</button> */}
-                  <div className='flex justify-center'>
-                    <Button
-                      // variant='destructive'
-                      className='bg-red-600 rounded-xl h-[90%] w-[70%] text-black font-semibold'
-                    >Login</Button>
-                  </div>
-                </div>
+        {/* Large */}
+        <div className='hidden md:block'>
 
+            <div className='flex justify-around py-2'>
+              <div className='grid'>
+                <div className='space-x-3 text-white'>
+                  <Link className="hover:text-black hover:bg-white" href={'/piece'}>ONE PIECE /</Link>
+                  <Link className="hover:text-black hover:bg-white" href={'/titan'}>ATTACK ON TITAN /</Link>
+                  <Link className="hover:text-black hover:bg-white" href={'/jujutsu'}>JUJUTSU KAISEN /</Link>
+                </div>
+                
+                <div className='space-x-3 text-white'>
+                  <Link className="hover:text-black hover:bg-white" href={'/gundam'}>GUNDAM WING /</Link>
+                  <Link className="hover:text-black hover:bg-white" href={'/lakill'}>KILL LA KILL /</Link>
+                  <Link className="hover:text-black hover:bg-white" href={'/neon'}>NEON GENESIS EVANGELION /</Link>
+                </div>
               </div>
-            <hr></hr>
+              
+              <Link href={'/'}>
+                <h1 className='text-3xl font-bold text-white '>ARCANA</h1>
+              </Link>
+            </div>
+          <hr></hr>
         </div>
       </nav>
     </MotionDiv>

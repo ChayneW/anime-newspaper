@@ -13,10 +13,10 @@ export default function Home() {
     <main className='max-container min-h-screen'>
       <div className='grid'>
 
-        <div className='flex justify-between p-10'>
+        <div className='max-lg:grid max-lg:justify-center lg:flex lg:justify-between p-10'>
           <h1 className='font-poppins text-3xl text-left text-white'>Breaking News:</h1>
           
-          <div>
+          <div className=''>
             <Link 
               href="https://www.instagram.com/todd.pham?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               className="flex gap-2 align-baseline"
