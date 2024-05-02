@@ -1,8 +1,18 @@
-import React from 'react'
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import LoadingCard from '@/components/LoadingCard';
+
 
 const GundamPage = () => {
-  return (
+
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+    setImageLoaded(true);
+    };
+
+    return (
     <div className='max-container min-h-screen bg-white py-5'>
         <div className='grid'>
 
@@ -28,6 +38,7 @@ const GundamPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
                     {/* shows up for screens smaller than lg- */}
                     <Image
@@ -39,7 +50,9 @@ const GundamPage = () => {
                         priority
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
 
                 <div className='w-full max-lg:hidden xl:block'>
@@ -89,10 +102,10 @@ const GundamPage = () => {
                 </div>
             </div>
         </div>
-    
-    
+
+
     </div>
-  )
-}
+    )
+    }
 
 export default GundamPage
