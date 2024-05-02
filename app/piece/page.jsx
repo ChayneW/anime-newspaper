@@ -7,15 +7,15 @@ const OnePiecePage = () => {
         {/* title */}
         <div className='grid w-full h-full border-4 border-black'>
             <div>
-                <h1 className='font-roman font-bold leading-none tracking-wide text-center max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[100px] xl:text-[200px]'>WANTED</h1>
+                <h1 className='font-roman font-bold leading-none tracking-wide text-center max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>WANTED</h1>
             </div>
-            <div className='border-2 border-black'>
-                <p>JAPANESE: with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p>
+            <div className='border-2 border-black py-2'>
+                <p className='font-bold font-noto text-center'>エッグヘッド市への被害もあり、悪名高き犯罪者モンキー・D・ルフィの逮捕に向け、ご協力をお願いします。</p>
             </div>
 
             {/* units used: lg */}
             <div className='max-lg:grid lg:flex lg:flex-row border-2 border-black gap-2'>
-                <div className='grid max-lg:w-[100%] lg:w-1/3'>
+                <div className='grid max-lg:w-[100%] lg:w-1/3 gap-2'>
                     
                     <div className='relative w-[100%] h-[400px]'>
                         <Image
@@ -37,9 +37,10 @@ const OnePiecePage = () => {
                     </div>
 
                     {/* <p>with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p> */}
-                    <p>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
+                    <p className='py-2'>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
                 </div>
-                <div className='grid max-lg:w-[100%] lg:w-2/3'>
+
+                <div className='grid max-lg:w-[100%] lg:w-2/3 gap-2'>
                     {/* <p>with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p> */}
                     {/* <p>サカズキは、麦わらの一味がエッグヘッドでベガパンクと手を組んでいることを知る。彼はルッチとCP0エージェントをサポートするためにキザルを送る。ルッチは命令に背き、ルフィと戦う。二人は覚醒した姿に変身する。ベガパンクはルフィの悪魔の実のユニークさを説明し、太陽神ニカと結びつける。戦桃丸が到着し、セラフィムの助けを借りてルフィを助けるが、ルッチの攻撃で気絶してしまう。</p> */}
                     <p>ルッチたちがエッグヘッドへの侵攻を開始すると、シャカはそれに対処する準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える。</p>
@@ -47,28 +48,28 @@ const OnePiecePage = () => {
 
                     <div className='relative w-[100%] h-[400px]'>
                         <Image
-                            className='bg-black'
+                            className='max-lg:block lg:hidden bg-black'
                             src={'/piece/luffy-punch.gif'}
                             alt='luffy-gif'
                             fill
                             style={{objectFit:'contain'}}
                         
                         />
-                        {/* <Image
-                            className='bg-black'
-                            src={'/piece/luffy-rise.gif'}
+                        <Image
+                            className='max-lg:hidden lg:block bg-black'
+                            src={'/piece/luffy-punch.gif'}
                             alt='luffy-gif'
                             fill
-                            style={{objectFit:'contain'}}
+                            style={{objectFit:'cover'}}
                         
-                        /> */}
+                        />
                     </div>
                 </div>
                 
             </div>
 
             <div className='border-2 border-black'>
-                <p className='font-bold'>ENGLISH: with the damage to the city of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p>
+                <p className='font-bold font-anton text-md text-center'>With the damage to the island of egghead, we are asking for assistance in trying to finally apprehend the infamous criminal Monkey D. Luffy </p>
             </div>
 
             <div className='grid border-2 border-black py-4'>
@@ -84,11 +85,11 @@ const OnePiecePage = () => {
                             priority
                         />
                     </div>
-                    <h1 className='font-roman leading-none font-bold text-center max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[4rem] xl:text-[150px]'>3,000,000,000</h1>
+                    <h1 className='font-roman text-black leading-none font-bold text-center max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[150px]'>3,000,000,000</h1>
                 </div>
 
                 <div className='text-center'>
-                    <h1 className='font-roman leading-none font-bold max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[4rem] xl:text-[100px]'>DEAD OR ALIVE</h1>
+                    <h1 className='font-roman text-black leading-none font-bold max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[4rem] xl:text-[100px]'>DEAD OR ALIVE</h1>
                 </div>
             </div>
 
