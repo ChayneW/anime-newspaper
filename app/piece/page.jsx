@@ -8,7 +8,7 @@ const OnePiecePage = () => {
         <div className='grid w-full h-full border-4 border-black'>
             <div className='relative'>
                 <div className='absolute'>
-                    <h1 className='font-bold font-bitter text-red-600'>EggLand Arc</h1>
+                    <h1 className='font-bold font-bitter top-0 bottom-0 text-red-600'>EggLand Arc</h1>
                 </div>
                 <h1 className='font-roman font-bold leading-none tracking-wide text-center max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>WANTED</h1>
             </div>
