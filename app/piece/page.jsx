@@ -6,12 +6,30 @@ const OnePiecePage = () => {
     <div className='max-container min-h-screen w-full bg-white p-4 py-10'>
         {/* title */}
         <div className='grid w-full h-full border-4 border-black'>
+            
             <div className='relative'>
-                <div className='absolute'>
-                    <h1 className='font-bold font-bitter top-0 bottom-0 text-red-600'>EggLand Arc</h1>
+                {/* <div className='absolute z-1 left-5 top-[40%]'>
+                    <h1 className='font-bold font-bitter 
+                    text-red-600 max-xl:text-2xl xl:text-4xl'>
+                        EGGLAND
+                    </h1>
                 </div>
-                <h1 className='font-roman font-bold leading-none tracking-wide text-center max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>WANTED</h1>
+
+                <div className='absolute z-1 right-5 top-[40%]'>
+                    <h1 className='font-bold font-bitter 
+                     text-red-600 max-xl:text-2xl xl:text-4xl'>
+                        ARC
+                    </h1>
+                </div> */}
+                
+                <div className=''>
+                    <h1 className='font-roman font-bold leading-none tracking-wide text-center 
+                        max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>
+                        WANTED
+                    </h1>
+                </div>
             </div>
+
             <div className='border-2 border-black py-2'>
                 <p className='font-bold font-noto text-center'>エッグヘッド市への被害もあり、悪名高き犯罪者モンキー・D・ルフィの逮捕に向け、ご協力をお願いします。</p>
             </div>
