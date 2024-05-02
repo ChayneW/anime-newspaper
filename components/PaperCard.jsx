@@ -1,12 +1,18 @@
 'use client'
-import React, {Suspense} from 'react'
+import React, {useState, Suspense} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import LoadingCard from './LoadingCard'
 
 const PaperCard = ({name, gif, page}) => {
-  return (
-    <Suspense fallback={<LoadingCard/>}>
+
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+      setImageLoaded(true);
+    };
+
+    return (
         <div className={`relative grid justify-center py-4`}>
 
             <div className='relative z-0 w-[380px] h-[500px] p-4'>
@@ -28,18 +34,19 @@ const PaperCard = ({name, gif, page}) => {
                     href={`/${page}`}
                 >
                     <Image
-                    className='rounded-xl'
-                    src={`/${gif}`}
-                    fill
-                    // loading='lazy'
-                    priority
-                    objectFit='cover'
+                        className='rounded-xl'
+                        src={`/${gif}`}
+                        fill
+                        priority
+                        objectFit='cover'
+                        onLoad={handleImageLoad}
                     />
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </Link>
             </div>
         </div>
-    </Suspense>
-  )
-}
+
+    )
+    }
 
 export default PaperCard
