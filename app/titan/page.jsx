@@ -105,14 +105,11 @@ const TitanPage = () => {
 
         <div className='relative min-w-full h-[50vh]'>
           <Image
-            // width={100}
-            // height={100}
+            className='p-2'
             src={'/levi-run-1.gif'}
             alt='gif'
             fill
-            // loading='lazy'
             priority
-            // objectFit='cover'
             style={{objectFit:'cover'}}
             onLoad={handleImageLoad}
           />
@@ -165,8 +162,6 @@ const TitanPage = () => {
 
       </div>
 
-
-
       <div className='max-lg:hidden lg:flex border-4 border-black m-2'>
           <div className='max-lg:w-full lg:w-1/3'>
 
@@ -175,9 +170,7 @@ const TitanPage = () => {
                 src={'/levi-run-1.gif'}
                 alt='gif'
                 layout='fill'
-                // loading='lazy'
                 priority
-                // objectFit='cover'
                 style={{objectFit:'cover'}}
                 onLoad={handleImageLoad}
               />
@@ -227,15 +220,9 @@ const TitanPage = () => {
                   そこで、埋もれていた真実が浮かび上がり、欺瞞と犠牲の遺産が明らかになる。始祖の巨人の力が拮抗する中、同盟は崩壊の危機に瀕する。
                   秘密が解き明かされ、運命が交錯する中、舞台は激動の衝突へと移る。忠誠心が試され、生存競争が頂点に達するにつれて犠牲が払われる。敵味方の境界が曖昧になり、人類の運命が天秤にかけられる、裏切りと贖罪の手に汗握る物語に心構えを。</h1>
               </div>
-
             </div>
-            
           </div>
-          {/*  */}
-
-
       </div>
-
     </div>
   )
   }

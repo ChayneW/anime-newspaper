@@ -3,10 +3,15 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-              protocol: 'https',
-              hostname: "media.giphy.com",
-              pathname: '**',
+                protocol: 'https',
+                hostname: "media.giphy.com",
+                pathname: '**',
             },
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                pathname: '**',
+            }
         ],
     },
     

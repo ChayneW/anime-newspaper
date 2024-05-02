@@ -6,67 +6,53 @@ import {newsPapers} from '../data/constants'
 import LoadingCard from '@/components/LoadingCard'
 import PaperCard from '@/components/PaperCard'
 import { FaInstagram } from "react-icons/fa";
+import Footer from '@/components/Footer'
 
 export default function Home() {
 
   return (
-    <main className='max-container min-h-screen'>
-      <div className='grid'>
+    <>
+      <main className='max-container min-h-screen'>
+        <div className='grid'>
 
-        <div className='max-xl:grid max-xl:justify-center xl:flex xl:justify-between p-10 gap-2'>
-          <h1 className='font-poppins text-3xl text-left text-white'>Breaking News:</h1>
-          
-          <div className=''>
-            <Link 
-              href="https://www.instagram.com/todd.pham?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              className="flex gap-2 align-baseline"
-              target="_blank"
-              >
-                <Image
-                  src={'/instagram.svg'}
-                  width={20}
-                  height={20}
-                  loading='lazy'
-                />
-                <p className='font-poppins text-white'>Inspired by @todd.pham</p>
-              </Link>
-            </div>
-            {/* <FaInstagram size={20}/> */}
+          <div className='max-xl:grid max-xl:justify-center xl:flex xl:justify-between p-10 gap-2'>
+            <h1 className='font-poppins text-3xl text-left text-white'>Breaking News:</h1>
             
-
-        </div>
-        
-        <div className='grid xl:grid-cols-3'>
-          {newsPapers.map((paper, _index) => (
-              <PaperCard
-                key={_index}
-                name={paper?.name}
-                gif={paper?.gif}
-                page={paper?.page}
-              />
-            ))}
-            {/* <Suspense key={_index} fallback={<LoadingCard/>}>
-              <div key={_index} className={`relative grid justify-center py-4`}>
-                <h1 className='text-center py-2 text-white'>{paper.name}</h1>
-                <div className='relative w-[380px] h-[500px] p-4'>
-                  <Link
-                    href={`/${paper.page}`}
-                  >
-                    <Image
-                      className='rounded-xl'
-                      src={`/${paper.gif}`}
-                      fill
-                      objectFit='cover'
-                    />
-                  </Link>
-                </div>
+            <div className=''>
+              <Link 
+                href="https://www.instagram.com/todd.pham?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                className="flex gap-2 align-baseline"
+                target="_blank"
+                >
+                  <Image
+                    src={'/instagram.svg'}
+                    width={20}
+                    height={20}
+                    loading='lazy'
+                  />
+                  <p className='font-poppins text-white'>Inspired by @todd.pham</p>
+                </Link>
               </div>
-            </Suspense> */}
-            
-          {/* <LoadingCard/> */}
-        </div>
+            </div>
+          
+          <div className='grid xl:grid-cols-3'>
+            {newsPapers.map((paper, _index) => (
+                <PaperCard
+                  key={_index}
+                  name={paper?.name}
+                  gif={paper?.gif}
+                  page={paper?.page}
+                />
+              ))}
+          </div>
 
-      </div>
-    </main>
+          <div className=''>
+
+          </div>
+
+        </div>
+      </main>
+      <Footer/>
+    </>
   )
 }
