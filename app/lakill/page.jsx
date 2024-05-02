@@ -1,7 +1,15 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import LoadingCard from '@/components/LoadingCard';
 
 const KillPage = () => {
-  return (
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+    setImageLoaded(true);
+    };  
+    return (
     <div className='max-container min-h-screen w-full bg-white p-4'>
         <div className='grid w-full border-4 border-black p-4'>
             
@@ -20,7 +28,9 @@ const KillPage = () => {
                         priority
                         // objectFit='cover'
                         style={{objectFit: 'cover'}}
+                        onLoad={handleImageLoad}
                     />
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
                 <div className="relative w-[50%] h-[300px]">
                     <Image
@@ -30,8 +40,9 @@ const KillPage = () => {
                         priority
                         // objectFit='cover'
                         style={{objectFit: 'contain'}}
-
+                        onLoad={handleImageLoad}
                     />
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
             
@@ -47,8 +58,9 @@ const KillPage = () => {
                         // objectFit='cover'
                         // style={{objectFit: 'contain'}}
                         style={{objectFit: 'contain'}}
+                        onLoad={handleImageLoad}
                     />
-
+                    {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                 </div>
             </div>
 
@@ -66,6 +78,7 @@ const KillPage = () => {
                             // objectFit='cover'
                             style={{objectFit: 'cover'}}
                             // style={{objectFit: 'contain'}}
+                            onLoad={handleImageLoad}
                         />
 
                         {/* image for smaller screen */}
@@ -77,8 +90,11 @@ const KillPage = () => {
                             // objectFit='cover'
                             // style={{objectFit: 'cover'}}
                             style={{objectFit: 'contain'}}
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
+                    
                     <div className='relative max-xl:w-[100%] xl:w-2/3 h-[400px]'>
                         <Image
                             className='max-xl:hidden xl:block'
@@ -88,6 +104,7 @@ const KillPage = () => {
                             priority
                             style={{objectFit: 'cover'}}
                             // style={{objectFit: 'contain'}}
+                            onLoad={handleImageLoad}
                         />
                         <Image
                             className='max-xl:block xl:hidden bg-black'
@@ -97,8 +114,9 @@ const KillPage = () => {
                             priority
                             // style={{objectFit: 'cover'}}
                             style={{objectFit: 'contain'}}
+                            onLoad={handleImageLoad}
                         />
-
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                 </div>
             </div>
@@ -107,14 +125,9 @@ const KillPage = () => {
                 <h1 className='font-roman font-semibold text-xl text-wrap'>Kill La Kill is Trigger&apos;s first original anime television project, directed by Hiroyuki Imaishi and written by Kazuki Nakashima, both of whom had previously worked together on Gurren Lagann in 2007.</h1>
                 <h1 className='font-noto font-semibold text-xl text-wrap'>監督は今石洋之、脚本は2007年に『天元突破グレンラガン』でタッグを組んだ中島かずき。</h1>
             </div>
-
-
-        </div>
-
-        
-      
+        </div>  
     </div>
-  )
-}
+    )
+    }
 
 export default KillPage
