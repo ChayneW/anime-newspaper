@@ -1,8 +1,17 @@
-import React from 'react'
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import LoadingCard from '@/components/LoadingCard';
 
 const OnePiecePage = () => {
-  return (
+
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+      setImageLoaded(true);
+    };
+
+    return (
     <div className='max-container min-h-screen w-full bg-white p-4 py-10'>
         {/* title */}
         <div className='grid w-full h-full border-4 border-black'>
@@ -17,7 +26,7 @@ const OnePiecePage = () => {
 
                 <div className='absolute z-1 right-5 top-[40%]'>
                     <h1 className='font-bold font-bitter 
-                     text-red-600 max-xl:text-2xl xl:text-4xl'>
+                        text-red-600 max-xl:text-2xl xl:text-4xl'>
                         ARC
                     </h1>
                 </div> */}
@@ -46,7 +55,9 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit:'contain'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                     <p className='font-noto p-2'>ルッチ一味がエッグヘッドへの侵攻を開始する中、シャカは対処の準備を始める。しかしアトラスは命令を無視し、ルッチと戦おうとしてダメージを受ける。その場所に到着すると、怒ったルフィがルッチとの戦闘に備える</p>
                 </div>
@@ -63,6 +74,7 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit:'contain'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
                         <Image
                             className='max-lg:hidden lg:block bg-black'
@@ -71,7 +83,9 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit:'cover'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                 </div>
                 
@@ -91,10 +105,12 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit: 'contain'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                     <h1 className='font-roman text-black leading-none font-bold text-center
-                         max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[150px]'>
+                            max-xs:text-[2rem] xs:max-md:text-[3rem] md:max-xl:text-[5rem] xl:text-[150px]'>
                             3,000,000,000
                     </h1>
                 </div>
@@ -116,7 +132,7 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit: 'cover'}}
                             priority
-                        
+                            onLoad={handleImageLoad}
                         />
                         <Image
                             className='max-lg:block lg:hidden bg-black '
@@ -124,7 +140,9 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit: 'cover'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                     <p className='text-wrap font-noto p-2'>
                         サカズキは、麦わらの一味がエッグヘッドでベガパンクと手を組んでいることを知る。彼はルッチとCP0エージェントをサポートするためにキザルを送る。ルッチは命令に背き、ルフィと戦う。二人は覚醒した姿に変身する。ベガパンクはルフィの悪魔の実のユニークさを説明し、太陽神ニカと結びつける。戦桃丸が到着し、セラフィムの助けを借りてルフィを助けるが、ルッチの攻撃で気絶してしまう。
@@ -156,6 +174,7 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit: 'cover'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
                         <Image
                             className='max-lg:block lg:hidden bg-black p-4'
@@ -163,7 +182,9 @@ const OnePiecePage = () => {
                             fill
                             style={{objectFit: 'cover'}}
                             priority
+                            onLoad={handleImageLoad}
                         />
+                        {imageLoaded ? null : <div className="absolute inset-0 flex justify-center items-center"><LoadingCard/></div>}
                     </div>
                 </div>
 
@@ -174,7 +195,7 @@ const OnePiecePage = () => {
             </div>
         </div>
     </div>
-  )
-}
+    )
+    }
 
 export default OnePiecePage
