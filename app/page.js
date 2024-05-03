@@ -46,8 +46,28 @@ export default function Home() {
               ))}
           </div>
 
-          <div className=''>
+          <div className='w-full grid justify-center my-10'>
 
+            <div className='max-lg:grid lg:flex lg:flex-row w-[60%] mx-auto bg-[#31363F] rounded-md p-5'>
+              <div className='relative grid justify-center rounded-lg max-lg:py-5'>
+                <Image
+                className='rounded-lg'
+                  src={'/profile/logo-white.png'}
+                  alt='avatar'
+                  width={200}
+                  height={200}
+                />
+              </div>
+
+              <div className='px-10'>
+                <p className='break-words leading-7 text-xl text-center text-white'>
+                  Hi! I&apos;m Chayne (&apos;Shane&apos;), and I&apos;m a Web Developer from South Florida. 
+                  After seeing @todd.pham&apos;s page, I was heavily inspired to make this website and these designs.
+
+                </p>
+              </div>
+
+            </div>
           </div>
 
         </div>

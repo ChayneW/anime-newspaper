@@ -15,7 +15,7 @@ const PaperCard = ({name, gif, page}) => {
     return (
         <div className={`relative grid justify-center py-4`}>
 
-            <div className='relative z-0 w-[380px] h-[500px] p-4'>
+            <div className='relative z-0 w-[380px] h-[500px] p-4 max-md:p-6'>
                 <div className='absolute z-10 top-[10%] right-5 rounded-lg bg-gray-900 opacity-70 p-2' >
                     <Image
                         className=''
