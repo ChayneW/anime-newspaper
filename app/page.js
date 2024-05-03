@@ -48,7 +48,7 @@ export default function Home() {
 
           <div className='w-full grid justify-center my-10'>
 
-            <div className='max-lg:grid lg:flex lg:flex-row w-[60%] mx-auto bg-[#31363F] rounded-md p-5'>
+            <div className='max-lg:grid lg:flex lg:flex-row w-[60%] mx-auto bg-[#31363F] rounded-xl p-5'>
               <div className='relative grid justify-center rounded-lg max-lg:py-5'>
                 <Image
                 className='rounded-lg'
