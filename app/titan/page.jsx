@@ -46,7 +46,7 @@ const TitanPage = () => {
           {/* Image container */}
           <div className='relative z-0 min-w-screen max-xl:h-[60vh] xl:h-[80vh]'>
             <Image
-              src={'/levi-run-2.gif'}
+              src={'/titan/levi-run-2.gif'}
               alt='gif'
               // layout='fill'
               fill
@@ -106,7 +106,7 @@ const TitanPage = () => {
         <div className='relative min-w-full h-[50vh]'>
           <Image
             className='p-2'
-            src={'/levi-run-1.gif'}
+            src={'/titan/levi-run-1.gif'}
             alt='gif'
             fill
             priority
@@ -167,7 +167,7 @@ const TitanPage = () => {
 
             <div className='relative w-full h-[100%]'>
               <Image
-                src={'/levi-run-1.gif'}
+                src={'/titan/levi-run-1.gif'}
                 alt='gif'
                 layout='fill'
                 priority

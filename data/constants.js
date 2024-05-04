@@ -1,25 +1,25 @@
 export const newsPapers = [
     {
         name: 'TATAKAE!',
-        gif: 'tatakae.gif',
+        gif: 'profile/tatakae.gif',
         img: 'tatakae.png',
         page: 'titan',
     },
     {
         name: 'ENDLESS WALTZ',
-        gif: 'gundam.gif',
+        gif: 'profile/endless-waltz.gif',
         img: 'gundam.png',
         page: 'gundam'
     },
     {
         name: 'OPENING OF DREAM',
-        gif: 'neon-newspaper.gif',
+        gif: 'profile/neon-newspaper.gif',
         img: 'neon.png',
         page: 'neon'
     },
     {
         name: 'THE CLIMB',
-        gif: 'kill-la-kill-newspaper.gif',
+        gif: 'profile/kill-la-kill-newspaper.gif',
         img: 'neon.png',
         page: 'lakill'
     },

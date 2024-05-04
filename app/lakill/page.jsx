@@ -23,7 +23,7 @@ const KillPage = () => {
             <div className='flex flex-row gap-5'>
                 <div className="relative w-[50%] h-[300px]">
                     <Image
-                        src={'/kill-start.gif'}
+                        src={'/lakill/kill-start.gif'}
                         fill
                         priority
                         // objectFit='cover'
@@ -35,7 +35,7 @@ const KillPage = () => {
                 <div className="relative w-[50%] h-[300px]">
                     <Image
                         className='bg-black'
-                        src={'/kill-satsuki-stare.gif'}
+                        src={'/lakill/kill-satsuki-stare.gif'}
                         fill
                         priority
                         // objectFit='cover'
@@ -51,7 +51,7 @@ const KillPage = () => {
                 <div className='relative w-[100%] h-[400px]'>
                     <Image
                         className='bg-black'
-                        src={'/kill-transform.gif'}
+                        src={'/lakill/kill-transform.gif'}
                         // src={'/kill-fight.gif'}
                         fill
                         priority
@@ -72,7 +72,7 @@ const KillPage = () => {
                         {/* image for larger screens */}
                         <Image
                             className='max-xl:hidden xl:grid justify-center'
-                            src={'/kill-mako-fight.gif'}
+                            src={'/lakill/kill-mako-fight.gif'}
                             fill
                             priority
                             // objectFit='cover'
@@ -84,7 +84,7 @@ const KillPage = () => {
                         {/* image for smaller screen */}
                         <Image
                             className='max-xl:block xl:hidden grid bg-black justify-center'
-                            src={'/kill-mako-fight.gif'}
+                            src={'/lakill/kill-mako-fight.gif'}
                             fill
                             priority
                             // objectFit='cover'
@@ -99,7 +99,7 @@ const KillPage = () => {
                         <Image
                             className='max-xl:hidden xl:block'
                             // src={'/kill-transform.gif'}
-                            src={'/kill-fight.gif'}
+                            src={'/lakill/kill-fight.gif'}
                             fill
                             priority
                             style={{objectFit: 'cover'}}
@@ -109,7 +109,7 @@ const KillPage = () => {
                         <Image
                             className='max-xl:block xl:hidden bg-black'
                             // src={'/kill-transform.gif'}
-                            src={'/kill-fight.gif'}
+                            src={'/lakill/kill-fight.gif'}
                             fill
                             priority
                             // style={{objectFit: 'cover'}}

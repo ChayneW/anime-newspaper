@@ -29,7 +29,7 @@ const NeonPage = () => {
           <div className="relative max-xl:min-w-[100%] max-md:min-h-[50vh] md:max-xl:min-h-[100vh] xl:min-w-[1000px] xl:min-h-[1000px]">
             <Image
               className='relative justify-end bg-black'
-              src={'/neon-evan.gif'}
+              src={'/neon/neon-evan.gif'}
               alt='gif'
               fill
               priority

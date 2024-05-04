@@ -32,7 +32,7 @@ const GundamPage = () => {
                     <Image
                         className=' max-lg:hidden lg:block relative bg-black'
                         // src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXNtOXk0cHEzMnE3b2pmc2plMTQ5bXE1ajR6OHVmbGRycTA5MGZnbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F8eKDINru1sk0/giphy.gif'
-                        src={'/zero-dmg.gif'}
+                        src={'/gundam/zero-dmg.gif'}
                         alt='gif'
                         fill
                         priority
@@ -44,7 +44,7 @@ const GundamPage = () => {
                     <Image
                         className=' max-lg:block lg:hidden relative bg-black'
                         // src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXNtOXk0cHEzMnE3b2pmc2plMTQ5bXE1ajR6OHVmbGRycTA5MGZnbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F8eKDINru1sk0/giphy.gif'
-                        src={'/zero-dmg.gif'}
+                        src={'/gundam/zero-dmg.gif'}
                         alt='gif'
                         fill
                         priority

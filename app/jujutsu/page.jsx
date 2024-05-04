@@ -17,7 +17,12 @@ const JujutsuPage = () => {
         <div className='grid w-full h-full gap-10'>
             {/* calmity */}
             <div className='grid justify-center gap-2'>
-                <h1 className='font-archivo font-bold leading-none tracking-wide text-center max-xl:text-[3rem] xl:text-[200px]'>カラミティ</h1>
+                {/* <h1 className='font-archivo font-bold leading-none tracking-wide text-center max-xl:text-[3rem] xl:text-[200px]'>カラミティ</h1> */}
+                <h1 className='font-archivo font-bold leading-none tracking-wide text-center 
+                max-xs:text-[3rem] xs:max-md:text-[5rem] md:max-xl:text-[120px] xl:text-[200px]'>
+                    カラミティ
+                </h1>
+
                 <h1 className='font-noto font-bold max-xl:text-md xl:text-xl text-center px-5 text-wrap'>呪いの計画的な攻撃により、パワーバランスは変化し始める。かつて渋谷の街であった戦場がむき出しになる一方で、柔術部隊は復興への道を急ぐ。</h1>
             </div>
 
