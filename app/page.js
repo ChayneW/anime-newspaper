@@ -60,7 +60,7 @@ export default function Home() {
               </div>
 
               <div className='px-10'>
-                <p className='break-words leading-7 text-xl text-center text-white'>
+                <p className='break-words leading-7 max-md:text-sm md:text-xl text-center text-white'>
                   Hi! I&apos;m Chayne (&apos;Shane&apos;), and I&apos;m a Web Developer from South Florida. 
                   After seeing @todd.pham&apos;s page, I was heavily inspired to make this website and these designs.
 
