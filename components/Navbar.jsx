@@ -41,7 +41,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className='grid self-center'
               >
-              <h1 className='text-3xl font-bold text-white'>ARCANA</h1>
+              <h1 className='text-3xl font-bold text-white self-center'>ARCANA</h1>
             </Button>
 
             <div className='self-center'>
@@ -49,8 +49,8 @@ const Navbar = () => {
                   className='rounded-lg'
                   src={"/chaynedev.png"}
                   alt='test logo'
-                  height={100} 
-                  width={80}
+                  height={60} 
+                  width={60}
                 />
             </div>
           </div>
