@@ -53,6 +53,7 @@ export default function Home() {
               <div className='grid xl:grid-cols-3'>
                 {newsPapers.map((paper, _index) => (
                   <MotionDiv
+                  key={_index}
                   variants={variants}
                   initial='hidden'
                   animate='visible'

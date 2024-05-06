@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Image
                   className='rounded-lg'
                   src={"/chaynedev.png"}
-                  alt='test logo'
+                  alt='test-logo'
                   height={60} 
                   width={60}
                 />
